@@ -1,0 +1,22 @@
+{
+    "name": "php-concept/component-auth-api-token",
+    "description": "Concept component — Bearer API token authentication scaffold",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Concept\\Components\\AuthApiToken\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.4",
+        "illuminate/database": "^13.1",
+        "php-concept/core-2": "^1.0",
+        "php-concept/extension-components": "^3.0",
+        "php-concept/extension-form-request": "^3.0",
+        "php-concept/extension-http": "^3.0",
+        "psr/http-message": "^2.0",
+        "psr/http-server-middleware": "^1.0",
+        "symfony/console": "^7.2|^8.0"
+    }
+}

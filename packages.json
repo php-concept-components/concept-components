@@ -1,0 +1,7 @@
+{
+    "org": "php-concept-components",
+    "monorepo": "concept-components",
+    "packages": {
+        "packages/auth-api-token": "component-auth-api-token"
+    }
+}
