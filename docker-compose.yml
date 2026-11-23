@@ -8,4 +8,8 @@ services:
       - .:/var/www/html
       - ../concept-core-2:/var/www/concept-core-2
       - ../concept-extensions:/var/www/concept-extensions
+      # Optional: run / inspect assemblies that consume components via path
+      - ../concept-apps:/var/www/concept-apps
+    environment:
+      COMPOSER_HOME: /tmp/composer
     command: sleep infinity

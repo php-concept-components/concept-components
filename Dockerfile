@@ -8,4 +8,9 @@ RUN apt-get update && apt-get install -y \
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
+ENV COMPOSER_HOME=/tmp/composer \
+    COMPOSER_ALLOW_SUPERUSER=1
+
+RUN mkdir -p /tmp/composer && chmod 777 /tmp/composer
+
 WORKDIR /var/www/html
